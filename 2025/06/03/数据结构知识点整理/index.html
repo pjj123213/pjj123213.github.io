@@ -15,10 +15,12 @@
 <meta property="og:site_name" content="泡椒鸡">
 <meta property="og:description" content="数据结构知识点整理 顺序表采用物理相邻方式实现线性关系，读取值O（1） 单链表的节点可以存储在内存的连续空间 链表节点只能顺序访问 单链表6个基本运算除了初始化，复杂度都为O（n） 栈和队列只允许在端点处插入和删除 队元素个数的计算公式：（R-F+M）% M 有n个节点的二叉树的二叉链表中，空指针数为n+1 二叉树中序线索化后剩下的空指针数为2 一个图中，所有顶点的度数之和等于图的边数的2倍 具有">
 <meta property="og:locale">
+<meta property="og:image" content="http://example.com/image/2.png">
 <meta property="article:published_time" content="2025-06-02T23:45:13.000Z">
-<meta property="article:modified_time" content="2025-06-05T15:26:43.742Z">
+<meta property="article:modified_time" content="2025-06-12T07:34:24.803Z">
 <meta property="article:author" content="hongrui ouyang">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/image/2.png">
   
     <link rel="alternative" href="/atom.xml" title="泡椒鸡" type="application/atom+xml">
   
@@ -197,7 +199,7 @@
 <li>一个串的长度为n， 则子串的数目为n（n+1）&#x2F;2 + 1</li>
 <li>0多且非0分布无规律时是稀疏矩阵， 非0多且对称是稠密矩阵</li>
 <li>AOE（Activity on Edge）网关键路径：由最早发生时间等于最晚发生时间的事件及关联活动构成的从源点到汇点的一条路径</li>
-<li>图的遍历算法：DFS用栈实现，BFS用队列实现</li>
+<li>图的遍历算法：DFS用栈实现，BFS用队列实现<br>1.特别注意的是：两种遍历算法与存储结构有关，邻接矩阵是O（n^2） 邻接表是O(n + e)</li>
 <li>最小生成树：prim（选点法）适用于稠密图，时间复杂度O(n^2); Kruskal(选边法)适用于稀疏图，时间复杂度O(n*e {顶点数×边数})</li>
 <li>最短路径：Dijkstra：可以用正权，无权图，不可用于负权，相当于广搜，O(n^2); Floyd:O(n^3)</li>
 <li>拓扑那块，需掌握事件发生最早时间最晚时间和活动开始最早最晚时间</li>
@@ -212,8 +214,15 @@
 <li>单链表中执行删除链表最后一个元素与链表长度有关</li>
 <li>用顺序表存储线性表时，不需要额外开辟空间来保存数据元素间的相互关系</li>
 <li>哈夫曼树中空指针域来自度为0的点</li>
-<li>65个顶点的有向树，入度为1的顶点数为64</li>
-<li>有向图G有e条弧，所有顶点的出度数之和为e</li>
+<li>65个顶点的有向树，入度为1的顶点数为64<ol>
+<li>有向树的条件：根节点入度为0； 其他节点入度为1； 边数为N - 1</li>
+</ol>
+</li>
+<li>有向图G有e条弧，所有顶点的出度数之和为e<ol>
+<li>在一个有向图中所有顶点的入度之和等于出度之和。</li>
+</ol>
+</li>
+<li>有向图的连通性判断<br><img src="/../image/2.png"></li>
 </ol>
 
       
